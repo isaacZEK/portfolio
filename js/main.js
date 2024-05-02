@@ -40,3 +40,20 @@ let changeText = () => {
 
 changeText();
 setInterval(changeText, 5000); // Changed interval timing for testing
+
+
+window.addEventListener("scroll",activemenu);
+
+const header  = document.querySelector("header");
+window.addEventListener("scroll", function(){
+    header.classList.toggle("sticky",window.scrollY > 50)
+})
+
+let menuIcon = document.querySelector("#menu-icon");
+let navbar = document.querySelector("navbar");
+
+menuIcon.onclick = () =>{
+    menuIcon.checkVisibilitylassList.toggle("bx-x");
+    navbar.classList.toggle("open");
+    
+}
