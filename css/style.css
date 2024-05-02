@@ -571,7 +571,7 @@ div.container{
 }
 
 
-
+/*start of changing text css*/
 .change-text {
     font-size: 1.5rem;
     font-weight: 600;
@@ -606,7 +606,7 @@ div.container{
     transform: rotateX(-90deg);
 }
 
-
+/*end of changing text css*/
 
 
 
