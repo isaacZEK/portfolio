@@ -329,7 +329,7 @@ section{
 .Technical-bars .bar .info span{
     font-size: 17px;
     font-weight: 500;
-    animation: showText .5s 1s linear forwards;
+    animation: showText 0.5s 1s linear forwards;
     opacity: 0;
 }
 
@@ -339,7 +339,7 @@ section{
     width: 100%;
     height: 5px;
     background-color: #00000000;
-    animation: animate 1s cubic-bezier(1,0,0,5,1) forwards;
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
     transform: scaleX(0);
     transform-origin: left;
 }
@@ -355,7 +355,7 @@ section{
     background-color: #0ef;
     position: absolute;
     border-radius: 10px;
-    animation: animate 1s 1s cubic-bezier(1,0,0,5,1) forwards;
+    animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
     transform: scaleX(0);
     transform-origin: left;
 }
@@ -391,14 +391,16 @@ section{
     
 }
 
-progress-line span::after{
+
+
+.progress-line span::after{
     position: absolute;
     padding: 1px 8px;
     background-color: #000;
     color: #fff;
     font-size: 12px;
     border-radius:  3px;
-    top: -20px;
+    top: -28px;
     right: -20px;
     animation: showText 0.5s 1.5s linear forwards;
     opacity: 0;
@@ -410,7 +412,7 @@ progress-line span::after{
 
 
 .progress-line.css span::after{
-    content: "60%";
+    content: "80%";
 }
 
 
@@ -420,18 +422,19 @@ progress-line span::after{
 
 
 .progress-line.react span::after{
-    content: "90%";
+    content: "75%";
 }
 
 
 .progress-line.php span::after{
-    content: "90%";
+    content: "85%";
 }
 
 
 .progress-line.java span::after{
-    content: "90%";
+    content: "80%";
 }
+
 
 
 .progress-line span::before{
@@ -449,6 +452,7 @@ progress-line span::after{
     opacity: 0;
 }
 
+
 @keyframes showText{
     100%{
         opacity: 1;
@@ -459,7 +463,7 @@ progress-line span::after{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space evenly;
+    justify-content: space-evenly;
     align-items: flex-start;
 }
 
@@ -559,7 +563,18 @@ progress-line span::after{
     opacity: 0;
 }
 
-
+.radial-bar .text{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    bottom: -5px;
+    transform: translateX(-50px);
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 0;
+}
 
 
 
