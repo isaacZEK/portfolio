@@ -57,3 +57,7 @@ menuIcon.onclick = () =>{
     navbar.classList.toggle("open");
     
 }
+
+
+//mi it up portfolio section
+var mixer = mixitup('.portfolio-gallery');
