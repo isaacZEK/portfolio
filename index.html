@@ -8,21 +8,24 @@
         <link rel="stylesheet" href="css/style.css">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     </head>
     <body>
-        <header class="header">
+        
+        <header class="header sticky">
             <a href="#" class="logo">Isaac's Portfolio</a>
-            <nav class="navbar">
-                <a href="#" style="--i:1" class="active" >Home</a>
+            <div id="menu-icon" class="bx bx-menu"></div>
+            <nav id="main-nav" class="navbar">
+                <a href="#" style="--i:1" class="active">Home</a>
                 <a href="#" style="--i:2">About</a>
                 <a href="#" style="--i:3">Skills</a>
-                <a href="#" style="--i:4">Project</a>
+                <a href="#" style="--i:4">Projects</a>
                 <a href="#" style="--i:5">Contact</a>
             </nav>
-            <div id="menu-icon" class="bx bx-menu"></div>
-        </header>
+        </header>        
+        
         <section class="home">
-            <div class="home-content">
+            <div class="home-content scroll-scale">
                 <h1>Hello, Its Me</h1>
                 <h1>Isaac Chama</h1>
                 <div class="change-text">
@@ -48,9 +51,9 @@
             </div>
 
             
-                <div class="home-image">
+                <div class="home-image scroll-scale">
                     <div class="img-box">
-                        <img src="images/og.png" alt="my portfolio photo" id="photo">
+                        <img src="images/isaac-home.png" alt="my portfolio photo" id="photo">
                     </div>
                 </div>
             
@@ -60,10 +63,10 @@
 
 
         <section class="about" id="about">
-            <div class="about-img">
-                <img src="" alt="">
+            <div class="about-img scroll-scale">
+                <img src="images/isaac-about.png" alt="">
             </div>
-            <div class="about-text">
+            <div class="about-text scroll-scale">
                 <h2>About <span>Me</span></h2>
                 <h4>Full Stack Developer!</h4>
                 <p>I am a skilled web developer with over 2 years experience</p>
@@ -75,10 +78,10 @@
         <section>
             <div class="services" id="services">
                 <div class="container">
-                    <h1 class="subtitle">
+                    <h1 class="sub-title scroll-scale">
                       My <span>services</span>  
                     </h1>
-                    <div class="services-list">
+                    <div class="services-list scroll-bottom">
                         <div>
                             <i class="bx bx-code" style='color:#00eeff'></i>
                             <h2>UI/UX Design</h2>
@@ -113,11 +116,11 @@
             </div>
         </section>
 
-        <h1 class="sub-title">My <span>Skills</span></h1>
+        <h1 class="sub-title scroll-scale">My <span>Skills</span></h1>
         <section class="expertise">
             <div class="container1" id="skills">
-                <h1 class="heading1">Technical Skills</h1>
-                <div class="Technical-bars">
+                <h1 class="heading1 scroll-scale">Technical Skills</h1>
+                <div class="Technical-bars scroll-scale">
                     <div class="bar" style="color:#c95d2e">
                         <i class="bx bxl-html5"></i>
                         
@@ -187,10 +190,10 @@
             </div>
 
             <div class="container">
-                <h1 class="heading1">
+                <h1 class="heading1 scroll-scale">
                     Professional Skills
                 </h1>
-                <div class="radial-bars">
+                <div class="radial-bars scroll-scale">
                     <div class="radial-bar">
                         <svg x="0px" y="0px" viewBox="0 0 200 200">
                             <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
@@ -236,16 +239,16 @@
 
         <div class="container">
 
-            <h2 class="sub-title">Latest <span>Projects</span></h2>
+            <h2 class="sub-title scroll-scale">Latest <span>Projects</span></h2>
 
-            <div class="filter-buttons">
+            <div class="filter-buttons scroll-scale">
                 <button class="btn" data-filter=".all">All</button>
                 <button class="btn" data-filter=".product">Product</button>
                 <button class="btn" data-filter=".inter">Interacting</button>
                 <button class="btn" data-filter=".web">Web App</button>
             </div>
     
-            <div class="portfolio-gallery">
+            <div class="portfolio-gallery scroll-bottom">
                 <div class="port-box mix all">
                     <div class="port-image">
                         <img src="images/passportsize ID.PNG" alt="a passport ID for Isaac Chama">
@@ -256,8 +259,8 @@
                         <a href="your_actual_link_here"><i class="bx bx-link-external"></i></a>
                     </div>
                 </div>
-    
-                <div class="port-box mix inter">
+
+                <div class="port-box mix product">
                     <div class="port-image">
                         <img src="images/passportsize ID.PNG" alt="a passport ID for Isaac Chama">
                     </div>
@@ -279,7 +282,7 @@
                     </div>
                 </div>
 
-                <div class="port-box mix inter">
+                <div class="port-box mix web">
                     <div class="port-image">
                         <img src="images/passportsize ID.PNG" alt="a passport ID for Isaac Chama">
                     </div>
@@ -292,6 +295,32 @@
             </div>
         </div>
     </section>
+
+    <!--contact section-->
+    
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="sub-title scroll-scale">Contact <span>Me</span></h2>
+        <form class="scroll-bottom" action="#">
+            <input type="text" placeholder="Your Name">
+            <input type="text" placeholder="Your Email">
+            <input type="text" placeholder="Your Address">
+            <input type="text" placeholder="Phone Number">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <div class="btn-box formBtn">
+                <button type="submit" class="btn">Send Message</button>
+            </div>
+        </form>
+        </div>
+    </section>
+
+    <!--this is the footer section-->
+<footer>
+    <p>Copyright &copy; 2024 by Isaac Chama (iPro) || All Rights Reserved.</p>
+    <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+</footer>
+
+
 
 
         <script src="js/mixitup.min.js"></script>
