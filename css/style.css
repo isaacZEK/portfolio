@@ -56,7 +56,10 @@ body{
     z-index: 100; 
 }
 
-
+.aboutme-brief{
+    line-height: 25px;
+    align-content: center;
+}
 
 .logo{
     position: relative;
@@ -114,11 +117,14 @@ body{
     background-position:center;
     display: grid;
     align-items: center;
-    padding: 20px 10% 0;
+    padding: 20px 5% 0;
     grid-template-columns: repeat(2,1fr);
-    margin-top: -10px;
+    margin-top: 5px;
 } 
 
+p{
+    font-size: 1.2rem;
+}
 
 .home-content{
     max-width: 600px;
@@ -245,13 +251,14 @@ body{
     margin: 15px 0 30px;
 }
 
+/*
 .about-text p{
     color: aliceblue;
     font-size: 20px;
     line-height: 14px;
-    margin: bottom 4rem;
-    
+    margin-bottom: 4rem;  
 }
+*/
 
 #services{
     color: aliceblue;
@@ -260,10 +267,15 @@ body{
     margin-bottom:4rem;
 }
 
+.service-icon{
+    max-width: 50px;
+    max-height: 50px;
+}
+
 .sub-title{
     text-align: center;
     font-size: 60px;
-    padding-bottom: 70px;
+    padding-bottom: 5px;
 }
 
 .sub-title span{
@@ -272,7 +284,10 @@ body{
 
 .container{
     padding:90px;
+    justify-content: center;
 }
+
+
 
 .services-list{
     display: grid;
@@ -344,12 +359,35 @@ section{
     flex-wrap: wrap;
 }
 
-.container1{
-    width: 600px;
-    height: 500px;
-    padding: 75px 90px;
-    margin-left: 120px;
+
+section.expertise{
+    display: flex;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+    align-items: center;
+    justify-content: center;
 }
+
+#container1{
+                margin-right: 15px;
+                margin-left: 10px;
+                width: 410px;
+                padding-right: 30px;
+                padding-left: 30px;
+                padding-bottom: 60px;          
+}
+
+#container2{
+                margin-right: 10px;
+                margin-left: 15px;
+                width: 410px;
+                padding-right: 30px;
+                padding-left: 30px;
+                border-left-width: 50px;
+}
+
 
 .heading1{
     text-align: center;
@@ -361,11 +399,16 @@ section{
 
 .bar{
     font-size: 23px;
+    padding: 10px 0;
 }
 
+
+
+/*
 .Technical-bars .bar{
-    margin-top: 40px 0;
-}
+    margin-top: 20px 0;
+} 
+*/
 
 .Technical-bars .bar:first-child{
     margin-top: 0;
@@ -512,16 +555,12 @@ section{
     }
 }
 
-div.container{
-    justify-content: center;
-}
-
 .radial-bars {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
 }
 
 .radial-bar{
@@ -538,7 +577,7 @@ div.container{
 .radial-bars .radial-bar svg {
     position: absolute;
     top: -85px;
-    left: -55px;
+    left: -90px;
     transform: translate(50%, 50%) rotate(-90deg);
     width: 100%;
     height: 100%;
@@ -609,17 +648,19 @@ div.container{
     opacity: 0;
 }
 
+
 .radial-bar .text {
     width: 100%;
     position: absolute;
     text-align: center;
-    left: 50%;
-    bottom: -5px;
+    left: 50px;
+    bottom: -15px;
     transform: translateX(-50px);
     font-size: 17px;
     font-weight: 500;
     animation: showText 0.5s 1s linear forwards;
     opacity: 0;
+    padding: 2px;
 }
 
 
@@ -757,7 +798,8 @@ div.container{
 
 .portfolio-content{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(359px, auto));   
+    grid-template-columns: repeat(auto-fit, minmax(359px, auto));
+    gap:2rem;   
 }
 
 .root{
@@ -827,10 +869,6 @@ div.container{
     height: 100%;
 }
 
-
-
-
-
 /*my projects*/
 .filter-buttons{
     margin: 2rem;
@@ -860,7 +898,7 @@ div.container{
 
 .portfolio-gallery{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
     gap: 2rem;
 }
 
@@ -875,6 +913,8 @@ div.container{
     border: 2px solid #0ef;
     box-shadow: var(--hover-color);
     box-shadow: var(--neon-box-shadow);
+    max-width: 100%;
+    max-height: 100%;
 }
 
 
@@ -888,10 +928,12 @@ div.container{
 
 .port-image img{
     width: 100%;
-    opacity: .5s;
+    opacity: 0.5s;
     height: 100%;
-    transition: .5s;
+    transition: 0.5s;
 }
+
+
 
 .port-content{
     position: absolute;
@@ -900,7 +942,7 @@ div.container{
     width: 100%;
     height: 100%;
     opacity: 0;
-    background: linear-gradient(rgba(0,0,0,.2), #12f7ff);
+    background: linear-gradient(rgba(0,0,0,0.2), #12f7ff);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -926,7 +968,7 @@ div.container{
 }
 
 .port-content p{
-    font-size: .8rem;
+    font-size: 0.8rem;
     margin: 5px 0 15px 0;
 }
 
@@ -940,7 +982,6 @@ div.container{
     height: 50px;
     border: 1px solid var(--hover-color);
     outline: 2px solid #fff;
-
 }
 
 .port-content a i{
@@ -954,6 +995,9 @@ div.container{
 
 /*Contact section css*/
 .contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: var(--secon-bg-color);
     width: 100%;
 }
@@ -1003,7 +1047,7 @@ div.container{
     font-size:1rem;
     letter-spacing: 1px;
     font-weight: 600;
-    transition: .6s;
+    transition: 0.6s;
     box-shadow: var(--neon-box-shadow);
     border-radius: 5px;
     position: relative;
@@ -1015,6 +1059,10 @@ div.container{
 .btn:hover{
     color: var(--hover-color);
     
+}
+
+#my-skills{
+    padding-bottom: 40px;
 }
 
 .btn::before{
@@ -1051,18 +1099,19 @@ footer{
     padding:  1.5rem 10%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-
+    justify-content: center;
 }
 
-footer p{
+footer p.rights{
     color: #bdbdbd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 35%;
 }
 
 footer a{
     display: inline-flex;
-    justify-content: center;
-    color: var(--text-color);
     background: var(--hover-color);
     padding: .6rem;
     border-radius: 5px;
@@ -1072,6 +1121,7 @@ footer a{
     font-size: 1rem;
     color: var(--secon-bg-color);
 }
+
 
 /*break points*/
 @media(max-width:991px){
@@ -1157,7 +1207,6 @@ footer a{
 
     .home{
         grid-template-columns: 1fr;
-        
     }
 
     .home-image{
@@ -1165,21 +1214,22 @@ footer a{
         margin-bottom: 5rem;
     }
 
-    /*
-    .liquid-shape{
-        width: 80%;
-        left:10%;
-        top:13%;
-    }
-    */
-
+   
     .about{
         flex-direction: column-reverse;
     }
+    
+    
 
-    .expertise{
-        grid-template-columns: 1fr;
+    
+    .expertise #container2{
+        height: 200px;
+        width: 100%;
+        margin: 200px;
+        justify-content: center;
+        align-items: center;
     }
+ 
 
     .filter-buttons{
         margin: 2.5rem 0;
@@ -1197,20 +1247,92 @@ footer a{
         font-size: 0.6rem;
     }
 
+    .home-content h1{
+        font-size: 2.5rem;
+    }
+
+    .home-content h3{
+        font-size: 1.5rem;
+    }
+
+    .home-content p{
+        font-size: 1rem;
+    }
+
+    .aboutme-brief{
+        font-size: .9rem;
+    }
+
+    a.btn-box{
+        font-size: .9rem;
+    }
+
+    #more-about-me.btn-box{
+        font-size: .8rem;
+    }
+
+    .about h2{
+        font-size: 2.5rem;
+    }
+
+    .about h4{
+        font-size: 1.5rem;
+    }
+
+    section.expertise{
+    display: none;
+    padding-left: 100px;
+    padding-right: 100px;
+    align-items: center;
+    justify-content: center;
+    }
+
+    #my-services{
+        font-size: 2.5rem;
+    }
+
+    #my-skills{
+        display: none;
+    }
+
+    #latest-project{
+        font-size: 2.5rem;
+    }
+
+    #contact-me{
+        font-size: 2.5rem;
+    }
+
     .filter-buttons .btn{
         font-size: 0.8rem;
     }
 
-    .img-about img{
-        width: 300px;
+    .about-img img{
+        width: 200px;
+        height: 300px;
     }
 
     .info-about1, .info-about2, .info-about3{
         display: none;
     }
 
-    .img-about p{
+    .about-img p{
         font-size: 1rem;
     }
+
+    #photo{
+        display: none;
+    }
+
+    .services .container{
+        padding-left: 40px;
+    }
+    
+    .portfolio-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30px, auto));
+    gap:2rem;   
+    }
+
 
 }

@@ -41,7 +41,7 @@ let changeText = () => {
 };
 
 changeText();
-setInterval(changeText, 5000); // Changed interval timing for testing
+setInterval(changeText, 6000); // Changed interval timing for testing
 
 
 const header  = document.querySelector("header");
